@@ -36,7 +36,7 @@ Most GPTs are one-off tools or static prompts. This is a **living, file-based as
 - `daily_log.md` — tracks your energy, sleep, meds, and session summaries
 - `solution_archive.py` — stores reusable or reviewed solutions (or writing samples, etc.)
 - `index.md` — explains all the other files and how they connect
-- GPT can help you **create custom files** based on your workflow or learning goals
+- GPT can help you **create custom files and update existing ones** based on your workflow or learning goals
 
 ---
 
@@ -52,9 +52,10 @@ Most GPTs are one-off tools or static prompts. This is a **living, file-based as
 ## 🪄 How to Use It
 
 1. Create your own [Custom GPT](https://chat.openai.com/gpts) (paid plan required)
-2. Upload these files to the GPT’s **Knowledge** section (Configure tab)
-3. Name your GPT something meaningful, like `Learning Ally` or `Meta-Tutor`
-4. Start your first chat with:
+2. Upload the "*_initial.md" files to the GPT’s **Knowledge** section (Configure tab)
+3. Copy the contents of `Text_for_Prompt_Box` into the "Instructions Prompt" Box under Configure
+4. Name your GPT something meaningful, like `Learning Ally` or `Meta-Tutor`
+5. Start your first chat with:
 
 ```
 Conversation Starter: Manual File Sync — Load all latest versions from Knowledge.
