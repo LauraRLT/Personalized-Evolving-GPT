@@ -1,67 +1,123 @@
-# learning_tracker.md
+# 📘 Learning Tracker
+<!--
+📌 LOGGING PROTOCOL FOR LEARNING_TRACKER FILES
 
-This file tracks what the user is learning over time — including what’s going well, what’s still hard, and what needs review.  
-The GPT uses this to adjust pacing, suggest review material, and reflect on growth.
+📌 1. IF CURRENT DAY (ASK FOR TIMEZONE OR USE UTC) ALREADY EXISTS:
+    ➤ Add additional concepts, notes, or reflections under that date
 
----
+📌 2. IF IT’S A NEW DAY (ASK FOR TIMEZONE OR USE UTC):
+    ➤ Append a new entry at the bottom of the file with a `---` to separate from previous days
 
-## 📌 How to Use This File
+📌 3. WEEKLY SUMMARY PROTOCOL:
+    ➤ Weeks run from **Sunday to Saturday**  
+    ➤ Insert each `📊 Week Summary` *after the last daily entry* for that week, separated by `---`  
+    ➤ If 3 or fewer entries exist for a given week, ask if I want to wait and include those partial days in the **next week**.
 
-- The GPT will update this file after significant learning moments or patterns
-- Entries are grouped by date
-- Content may include:
-  - Topics learned or explored
-  - Mistakes made and fixed
-  - Concepts still confusing
-  - Strategies or breakthroughs
-  - Review reminders
+📌 WEEK SUMMARY FORMAT:
 
----
+    ## 📊 Week Summary — YYYY-MM-DD to YYYY-MM-DD
 
-## 🧠 Current Topics and Struggles
+    - ✅ Concepts mastered
+    - 🛠️ Struggles or breakthroughs
+    - ♻️ Reusable patterns
+    - 🧭 Suggestions for next week
 
-Use this section to list what you're currently learning or wrestling with.  
-The GPT may refer to this when suggesting what to review or practice next.
+📌 TEMPLATE FOR DAILY LEARNING ENTRY FORMAT:
 
-```
-- [ ] (example) Recursion with memoization
-- [ ] (example) SQL JOINs vs UNIONs
-- [ ] (example) Distinguishing map vs filter logic
-```
+## YYYY-MM-DD
 
----
+### Task/Challenge (change to be descriptive)
+- ⏱️ Duration: [optional time spent]
+- 🎯 Confidence: [Low / Medium / High]
 
-## ✅ Recent Growth or Wins
+#### ✅ New Concepts Practiced:
+- [Key ideas, techniques, or strategies learned or reinforced]
 
-Celebrate progress — both small and large.
+#### 🛠️ Strategy & Problem-Solving:
+- [What I fixed, how I discovered the issue, insights from the fix]
 
-```
-- [x] Mastered basic list comprehensions
-- [x] Identified off-by-one errors in loops more quickly
-- [x] First time implementing a class-based design without scaffolding
-```
+#### ♻️ Reusable Patterns and Strategies:
+- [Patterns or approaches that might work in similar problems or activities]
 
----
+#### 📌 Notes:
+- [Thoughts, struggles, improvements in thinking or approach]
 
-## 🗓️ Learning Log
+#### 📈 Areas for Continued Practice:
+- [Concepts that still felt shaky or required GPT support]
 
-Chronological entries — oldest at the top. Examples included below
+#### 🧭 Next Suggestions:
+- [Follow-up problems, techniques to reinforce, or reminders for tomorrow/next task]
 
----
-
-### 2025-03-23
-
-- Reviewed the two-pointer strategy on sorted arrays. Initially confused by left/right pointer updates, but got it with guided scaffolding.
-- Had an executive function dip but still pushed through — added a note to try this strategy again next week.
+### Additional Task/Challenge (if multiple on same day)...
+-->
 
 ---
 
-### 2025-03-24
+# EXAMPLE ENTRY FOR PROGRAMMER LEARNING (delete after first real entry)
 
-- Realized I over-rely on brute force in unfamiliar problems. Added a reminder to ask GPT to prompt me for efficiency alternatives.
-- Started internalizing how to break down problems with nested logic.
+## 2025-03-27
+
+### Array Manipulation
+- ⏱️ Duration: 90 minutes
+- 🎯 Confidence: High
+
+#### ✅ New Concepts Practiced:
+- Prefix sum (difference array) for efficient range updates
+- Deferred computation via cumulative sum sweep
+- Array marking strategy using +add at start and -add at end
+- Efficient use of `itertools.accumulate` to compute final values
+
+#### 🛠️ Strategy & Problem-Solving:
+- Identified inefficiency in O(n × m) nested loop updates
+- Used question-driven debugging to isolate bottlenecks
+- Gradually restructured loop logic to achieve linear-time solution
+
+#### ♻️ Reusable Patterns and Strategies:
+- Range-based optimization using difference arrays
+- Readable and efficient cumulative processing with standard library tools
+
+#### 📌 Notes:
+- Array manipulation problems can often be reduced to scan-based approaches
+- When facing timeouts, reframe the update strategy rather than reaching for complex data structures
+
+#### 📈 Areas for Continued Practice:
+- Constructing two-phase greedy approaches from scratch
+- Optimizing nested loops via scans or auxiliary arrays
+
+#### 🧭 Next Suggestions:
+- Reinforce greedy vs DP identification
+- Practice string edits with symmetry or constraints
+- Try alternative implementations of prefix-based logic
+
+### Highest Value Palindrome
+- ⏱️ Duration: 120 minutes
+- 🎯 Confidence: Medium
+
+#### ✅ New Concepts Practiced:
+- Two-phase greedy palindrome rebuild
+- Efficient digit maximization under budget
+- Symmetric pair checking with max replacement
+
+#### 🛠️ Strategy & Problem-Solving:
+- Identified need to track changed indices
+- Used deque to simulate efficient pair tracking
+- Shifted from index sentinel to direct matching
+
+#### ♻️ Reusable Patterns and Strategies:
+- Greedy two-pass string transformation
+- Change tracking via deque
+- Palindrome rebuild with optional center update
+
+#### 📌 Notes:
+- Mostly clean code generated without help from GPT, strong debugging steps, and runtime remained O(n)
+- Polished and improved Pythonic style with help from GPT
+
+#### 📈 Areas for Continued Practice:
+- Greedy design for programs
+
+#### 🧭 Next Suggestions:
+- Focus on something lighter or more creative to re-energize and prevent burnout
 
 ---
 
-### [Add new entries below this line as you go]
-
+# START ENTRIES HERE

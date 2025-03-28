@@ -1,53 +1,42 @@
-# reminders.md
+# 📌 Persistent Reminders File
 
-This file tracks open tasks, system updates, or session-specific reminders that help the GPT support the user’s workflow.  
-It functions like a shared TODO list and memory scaffold between sessions.
-
----
-
-## 📌 How to Use This File
-
-- GPT may prompt the user to update this file during or after sessions
-- Reminders can include:
-  - Learning tasks
-  - Reflection questions
-  - File or setup changes
-  - Follow-ups from previous sessions
+This file tracks open reminders and nudges that carry over across sessions.  
+You (GPT) should review the **Active Reminders** section at the start or end of a session and ask me (the user) whether I want to resolve, archive, delete, or revise any items.  
+If I mention a recurring task or open loop during chat, ask whether to add it here.
 
 ---
 
-## ✅ Format Guidelines
+## ✅ Active Reminders
 
-Each reminder should include:
-- A status: `[ ]` for open, `[x]` for resolved
-- A short description
-- (Optional) a tag like `#coding`, `#review`, `#setup`, `#health`, etc.
+<!--
+Add new reminders here in simple bullets. You can organize them by type, urgency, or topic if helpful.
+GPT should offer to help resolve or archive them once complete.
 
-When complete, move it to the Archive section below. Examples below
+📌 ACTIVE REMINDERS FORMAT:
 
----
+- Reminder/task - Priority/deadline if applicable
 
-## 🔄 Active Reminders
+-->
 
-```
-- [ ] Add recent strategies to learning_tracker.md  #review
-- [ ] Try applying pacing adjustments on non-workdays  #setup
-- [ ] Create a writing_archive.md file for blog-style practice  #customization
-```
-
----
-
-## 📁 Reminder Archive
-
-```
-- [x] Install GitHub Copilot and test integration  #setup
-- [x] Add a bedtime wrap-up cue for weekday sessions  #routine
-```
+- 📄 Create personal version of health_baseline.md by answering questions in the file - High Priority
+- 📎 Plan and adjust the structure and list of files in index_*.md based on my needs - High Priority
+- 🔄 Update instructions_*.md based on my needs and goals - High Priority
+- 🧭 Confirm timezone preferences and update all relevant files
+- 💬 Write Conversation Starters based based on my needs and goals - Low Priority
+- 🔔 Write the first entries for daily_log_*.md and learning_tracker_*.md
 
 ---
 
-## 🧠 Tips for Use
+## 📁 Archived / Resolved Reminders
 
-- Use reminders to carry focus from session to session
-- GPT will suggest when to archive or resolve items
-- Keep open items visible in chat when needed
+<!--
+Move resolved items here once confirmed unless I request to delete them instead.
+You should ask whether any archived reminders should be deleted after a certain period.
+
+📌 ARCHIVED REMINDERS FORMAT:
+
+- ✅ Reminder/task - MM-DD-YYY completed and archived
+
+-->
+
+- ✅ Add formatting to reminders - 03-28-2025
